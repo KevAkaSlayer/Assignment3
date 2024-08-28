@@ -22,10 +22,13 @@
             colors: {
             clifford: '#da373d',
             'primary-clr':'#ABEF5F',
+                }
+            },
+            backgroundImage: {
+            'bg-image': "url('./assets/bg.jpg')",
             }
+         }
         }
-        }
-  }
     </script>
 </head>
 <body class="manrope-font bg-stone-100">
@@ -182,7 +185,7 @@
                 <p class="text-center md:w-1/2">The barn house captivates with its blend of rustic charm and 
                     modern sophistication, featuring weathered wood, sleek metal accents.</p>
                 <div class="grid gap-y-4 grid-cols-1  md:grid-cols-3 md:space-x-4">
-                    <div class="col-span-2 bg-white rounded-xl">
+                    <div class="col-span-2 bg-white rounded-2xl">
                         <div class="flex flex-col md:flex-row  p-4 rounded-lg space-x-4">
                             <div class="">
                                 <img class="w-full" src="./assets/img1.png" alt="">
@@ -198,7 +201,7 @@
                             </div>    
                         </div>
                     </div>
-                    <div class="col-span-1 p-4 bg-white rounded-xl">
+                    <div class="col-span-1 p-4 bg-white rounded-2xl">
                         <div>
                             <img class="w-full md:h-44" src="./assets/img2.png" alt="">
                         </div>
@@ -210,7 +213,7 @@
                             <img class="w-full md:h-48" src="./assets/img3.png" alt="">
                         </div>
                     </div>
-                    <div class="col-span-2 bg-white rounded-xl">
+                    <div class="col-span-2 bg-white rounded-2xl">
                         <div class="flex flex-col md:flex-row p-4 rounded-lg md:space-x-4">
                             <div class="md:w-1/2">
                                 <img class="w-full" src="./assets/img4.png" alt="">
@@ -226,7 +229,7 @@
                             </div>    
                         </div>
                     </div>
-                    <div class="col-span-1 p-4 bg-white rounded-xl">
+                    <div class="col-span-1 p-4 bg-white rounded-2xl">
                         <div>
                             <img class="w-full md:h-48" src="./assets/img5.png" alt="">
                         </div>
@@ -237,13 +240,53 @@
         </section>
         <!-- portfolio section end -->
 
+        <!--form section   -->
+        <section class="px-4 mt-4 pt-8 md:pt-24 md:pb-20 md:px-0 bg-no-repeat bg-cover" style="background-image:url('./assets/bg.jpg')">
+            <div class="container mx-auto flex-col flex justify-center items-center space-y-5">
+                <button class="btn bg-lime-100 font-extrabold text-xl rounded-3xl "><div class="w-9">
+                    <img class="w-full" src="./assets/icons8-arrow-side-30.png" alt="">
+                </div>Lets Connect</button>
+                <h1 class="font-extrabold text-3xl text-center">Lets Discuss Our Next Project</h1>
+                <p class="text-center md:w-1/2">The barn house captivates with its blend of rustic charm and 
+                    modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                <div class="grid grid-cols-1 w-full md:grid-cols-2 gap-4">
+                    <input class="bg-white rounded-3xl p-4" type="text" placeholder="First Name*">
+                    <input class="bg-white rounded-3xl p-4" type="text" placeholder="Last Name*">
+                    <input class="bg-white rounded-3xl p-4" type="text" placeholder="Phone Number*">
+                    <input class="bg-white rounded-3xl p-4" type="text" placeholder="Email Address*">        
+                    <input class="bg-white rounded-3xl p-4 md:col-span-2 h-44" type="text" placeholder="Write your message here">        
+                </div>
+                <button class="px-5  btn bg-primary-clr font-extrabold text-xl rounded-3xl w-full">Send Mail <div class="w-9  bg-black rounded-full p-2">
+                    <img class="w-full rotate-45" src="./assets/icons8-arrow-50.png" alt="">
+                </div></button>
+            </div>       
+        </section>
+        <!--form section end  -->
 
     </main>
 
-
-
-    <footer>
-
+    <footer class="bg-black px-4 md:px-0 pb-20 pt-20 ">
+        <div class="container mx-auto flex flex-col justify-center items-center space-y-5">
+            <div class="flex space-x-3 items-center">
+                <div class="w-12  bg-lime-300 rounded-full p-2">
+                    <img class="w-full rotate-90" src="./assets/icons8-arrow-30.png" alt="">
+                </div>
+                <h1 class="text-4xl font-extrabold text-white ">Rinterio</h1>
+            </div>
+            <p class="text-center text-white md:w-1/2">The barn house captivates with its blend of rustic charm and 
+                modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            <div class="flex flex-col lg:flex-row w-full md:justify-around text-center space-y-7 md:space-y-0 text-lg text-white">
+                <p class="font-bold">Home</p>
+                <p >Services</p>
+                <p >Portfolio</p>
+                <p >Blogs</p>
+                <p >Contact Us</p>
+            </div>
+            
+            <button class="px-5  btn bg-primary-clr font-extrabold text-xl rounded-3xl w-full md:w-60 ">Book Consult <div class="w-9  bg-black rounded-full p-2">
+                <img class="w-full rotate-45" src="./assets/icons8-arrow-50.png" alt="">
+            </div></button>
+        </div>
     </footer>
 
 </body>
